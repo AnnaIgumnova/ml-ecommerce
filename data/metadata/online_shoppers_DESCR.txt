@@ -1,0 +1,104 @@
+Online Shoppers Purchasing Intention Dataset
+============================================
+
+Description
+-----------
+This dataset contains session-level data from an e-commerce website.
+Each row represents a unique user session.
+
+The dataset consists of:
+- 10 numerical attributes
+- 8 categorical attributes
+- 1 binary target variable ("Revenue")
+
+The goal is to predict whether a user session will result in a completed transaction.
+
+Target Variable
+---------------
+Revenue:
+    TRUE  -> The session ended with a purchase.
+    FALSE -> No purchase was completed.
+
+Feature Descriptions
+--------------------
+
+Administrative:
+    Number of administrative pages (any non-product page like login, account settings, shipping pages) visited during the session.
+
+Administrative_Duration:
+    Total time spent on administrative pages (in seconds).
+
+Informational:
+    Number of informational pages (any non-product info page like About Us, FAQ, Policy pages) visited during the session.
+
+Informational_Duration:
+    Total time spent on informational pages (in seconds).
+
+ProductRelated:
+    Number of product-related pages visited during the session.
+
+ProductRelated_Duration:
+    Total time spent on product-related pages (in seconds).
+
+BounceRates:
+    Percentage of visitors who enter the website from a given page
+    and leave without triggering any further interaction
+    (i.e., single-page sessions).
+
+ExitRates:
+    Percentage of pageviews that were the last page
+    viewed in a session.
+
+PageValues:
+    Average value of a page before the completion
+    of an e-commerce transaction. Higher values
+    indicate pages more strongly associated with purchases.
+
+SpecialDay:
+    Indicates the closeness of the visit date to a special event
+    (e.g., Valentine's Day, Mother's Day).
+    Value ranges from 0 to 1.
+    - 0 means not close to a special day.
+    - 1 represents peak closeness to a special day.
+    The value is dynamically determined based on expected
+    e-commerce activity before special occasions.
+
+Month:
+    Month of the visit (categorical).
+
+OperatingSystems:
+    Operating system of the visitor.
+
+Browser:
+    Browser used by the visitor.
+
+Region:
+    Geographic region of the visitor.
+
+TrafficType:
+    Traffic source category (e.g., direct, referral, etc.).
+
+VisitorType:
+    Type of visitor:
+        - Returning_Visitor
+        - New_Visitor
+        - Other
+
+Weekend:
+    Boolean value indicating whether the session occurred
+    on a weekend.
+
+Data Characteristics
+--------------------
+- Mixed numerical and categorical features
+- Session-based behavioral data
+- Class imbalance present (fewer positive Revenue cases)
+- Suitable for binary classification tasks
+
+Typical Use Cases
+-----------------
+- Purchase intention prediction
+- Conversion rate optimization
+- Customer behavior modeling
+- Marketing analytics
+
