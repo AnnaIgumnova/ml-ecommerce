@@ -165,9 +165,9 @@ families['Browser'] = [c for c in feature_names if c.startswith('browser_')]
 families['Region'] = [c for c in feature_names if c.startswith('region_')]
 families['Traffic'] = [c for c in feature_names if c.startswith('traffic_type_')]
 
-# -----------------------------
-# AGGREGATE SHAP VALUES PER FAMILY
-# -----------------------------
+# ----------------------------------------------
+# AGGREGATE SHAP VALUES PER FEATURE FAMILY
+# ----------------------------------------------
 family_shap = {}
 total_abs = np.sum(np.abs(shap_values))
 for fam, feats in families.items():
